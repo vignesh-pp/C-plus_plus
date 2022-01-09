@@ -1,0 +1,173 @@
+
+//BANK MANAGEMENT system using class & inheritance in c++
+//1.savings bank   2.current bank
+//account creation
+//deposit 
+//withdraw
+//balance
+
+//#include<iostream>
+//using namespace std;
+//class account{
+//    private:
+//        string name;
+//        int accno;
+//        string acctype;
+//        public:
+//            void getaccdetails(){
+//                cout<<"enter name : ";
+//                cin>>name;
+//                cout<<"enter acc no : ";
+//                cin>>accno;
+//                cout<<"ente acctype : ";
+//                cin>>acctype;
+//            }
+//            void displayaccdetails(){
+//                cout<<" name : "<<name<<endl;
+//                cout<<" acc no : "<<accno<<endl;
+//                cout<<" acctype : "<<acctype<<endl;
+//            }
+//}; 
+//
+//class currentaccount:public account
+//{
+//    private:
+//        float balance;
+//    public:
+//        void cdisplay(){
+//            cout<<"balance : "<<balance<<endl;
+//        }
+//        void cdeposit(){
+//            float deposit;
+//            cout<<"enter amount to deposit : ";
+//            cin>>deposit;
+//            balance = balance + deposit;
+//        }
+//        void cwithdraw(){
+//            float withdraw;
+//            cout<<"balance : "<<balance<<endl;
+//            cout<<"enter amount to  be withdraw : ";
+//            cin>>withdraw;
+//            if(balance > 1000){
+//                balance = balance - withdraw;
+//                cout<<"balance amount after withdraw : "<<balance<<endl;
+//            }
+//            else{
+//                cout<<"insufficient amount";
+//            }
+//        } 
+//};
+//
+//class savingsaccount:public account{
+//    private:
+//        float sbalance;
+//        public:
+//        void sdisplay(){
+//            cout<<"balance : "<<sbalance<<endl;
+//        }
+//        void sdeposit(){
+//            float deposit,interest;
+//            cout<<"enter amount to deposit : ";
+//            cin>>deposit;
+//            sbalance = sbalance + deposit;
+//            interest = (sbalance*2)/100;
+//            sbalance = sbalance + interest;
+//        }
+//        void swithdraw(){
+//            float withdraw;
+//            cout<<"balance : "<<sbalance<<endl;
+//            cout<<"enter withdraw : ";
+//            cin>>withdraw;
+//            if(sbalance > 500){
+//                sbalance = sbalance - withdraw;
+//                cout<<"amount after withdraw : "<<sbalance<<endl;
+//            }
+//            else{
+//                cout<<"insuficient balnce";
+//            }
+//        }
+//};
+//
+//int main()
+//{
+//    currentaccount c;
+//    savingsaccount s;
+//    char type;
+//    cout<<"enter S for savings and C for current accounts : ";
+//    cin>>type;
+//    int choice;
+//    if(type=='S' || type=='s'){
+//        s.getaccdetails();
+//        while(1){
+//            cout<<"choose  choice : "<<endl;
+//            cout<<"1. deposit : "<<endl;
+//            cout<<"2. withdraw : "<<endl;
+//            cout<<"3. display balance : "<<endl;
+//            cout<<"4. dispaly with full details : "<<endl;
+//            cout<<"5. exit : "<<endl;
+//            cout<<"---------------------------------------"<<endl;
+//            cout<<"enter your choice"<<endl;
+//            cin>>choice;
+//            switch(choice){
+//                case 1:
+//                    s.sdeposit();
+//                    break;
+//                case 2:
+//                    s.swithdraw();
+//                    break;
+//                case 3:
+//                    s.sdisplay();
+//                    break;
+//                case 4:
+//                    s.displayaccdetails();
+//                    s.sdisplay();
+//                case 5:
+//                    goto end;
+//                    break;
+//                default:
+//                    cout<<"choice is invalid";
+//            }
+//        }
+//    }
+//    else if(type=='C' || type=='c'){
+//            c.getaccdetails();
+//            while(1){
+//            cout<<"choose  choice : "<<endl;
+//            cout<<"1. deposit : "<<endl;
+//            cout<<"2. withdraw : "<<endl;
+//            cout<<"3. display balance : "<<endl;
+//            cout<<"4. dispaly with full details : "<<endl;
+//            cout<<"5. exit : "<<endl;
+//            cout<<"------------------------------"<<endl;
+//            cout<<"enter your choice"<<endl;
+//            cin>>choice;
+//            switch(choice){
+//                case 1:
+//                    c.cdeposit();
+//                    break;
+//                case 2:
+//                    c.cwithdraw();
+//                    break;
+//                case 3:
+//                    c.cdisplay();
+//                    break;
+//                case 4:
+//                    c.displayaccdetails();
+//                    c.cdisplay();
+//                case 5:
+//                    goto end;
+//                    break;
+//                default:
+//                    cout<<"choice is invalid";
+//            }    
+//            }
+//    }
+//    else{
+//        cout<<"invalid account";
+//    }
+//    end:
+//    {
+//    cout<<"thanks for banking";
+//    }
+//    return 0;
+//} 
