@@ -1,0 +1,1912 @@
+/*if his basic salary (bs)is < than 1500,then hra=10% of bs and da=90% of bs,
+then his salary is either equal to or above 1500 ,then hra=500 and da=98% of bs,
+if employes salary is i/p through keyboard ,find a gross salary(gs)(addition of all)?
+*/
+
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    float bs,hra,da,gs;
+//    cout<<"enter basic salary "<<endl;
+//    cin>>bs;
+//    if(bs<1500){
+//        hra=bs*10/100;
+//        da=bs*90/100;
+//    }
+//    else{
+//        hra=500;
+//        da=bs*98/100;
+//    }
+//    gs = bs+hra+da;
+//    cout<<"bs  :"<<bs<<endl;
+//    cout<<"da  :"<<da<<endl;
+//    cout<<"hra :"<<hra<<endl;
+//    cout<<"-----------"<<endl;
+//    cout<<"gs  :"<<gs<<endl;
+//    return 0;
+//}
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+/*A company insures drivers:
+a. driver is married
+b. driver is unmarried,male & above 30 years.
+c. driver is unmarried,female & above 25 years.*/
+
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    char marital,gender;
+//    int age;
+//    cout<<"enter marriage (M) or unmarried (U) : "<<endl;
+//    cin>>marital;
+//    if(marital=='m' || marital=='M'){
+//        cout<<"you are eligible";    
+//    }
+//    
+//    else if(marital=='u' || marital=='U'){
+//        cout<<"enter gender male (m) or female (f): ";
+//        cin>>gender;
+//        cout<<"Age : ";
+//        cin>>age;
+//        if(((gender=='m' || gender=='M')&&age>=30) || ((gender=='f' || gender=='F')&&age>=25)){
+//            cout<<"you are eligible";
+//        }
+//
+//    else{
+//        cout<<"you are not eligible"<<endl;
+//        cout<<"invalid gender";
+//    }
+//}
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+/*a library fines for late
+5 days - 50 paise,6-10 days - 1 rupee,after 10 days - 5,after 30 days -membership cancel..*/
+
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//    int days;
+//    cout<<"no.of days : "<<endl;
+//    cin>>days;
+//    if(days>0 && days<6){
+//        cout<<"fine amount is 0.50 paise"<<endl;
+//        cout<<"total fine amount:" <<days*0.5;    
+//    }
+//    else if(days>=6 && days<=10){
+//            cout<<"fine amount is 1 paise"<<endl;
+//           cout<<"total fine amount: "<<days*0.5;
+//    }
+//    else if(days>=10 && days<=30){
+//            cout<<"fine amount is 5 paise"<<endl;
+//        cout<<"total fine amount: "<<days*5;
+//    }
+//    else{
+//        cout<<"your membership is cancel..";
+//    }
+//    
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//even number
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int i=1,n;
+//    cout<<"enter limit : ";
+//    cin>>n;
+//    do{
+//        if(i%2==0)
+//        cout<<i<<endl;
+//        i++;
+//    }
+//    while(i<=n);
+//    return 0;
+//} 
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//tables upto limi 10
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int i,n=10,t;
+//    cout<<"enter table: ";
+//    cin>>t;
+//    for(int i=1;i<=n;i++){
+//        cout<<t<<"*"<<i<<"="<<i*t<<endl;
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//for each (not working in this...)
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int x;
+//    cin>>x;
+//    int,char a[]={65,66,67,68};
+//    for(auto x:a){
+//        cout<<x<<endl;
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//find sum of n  numbers
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,i,sum=0;
+//    cin>>n;
+//    for(int i=0;i<=n;i++){
+//        sum+=i;
+//    }
+//    cout<<sum;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//check armstrong numbers => 153 =1 5 3 => cubes(1 5 3)=add all =153 is armstrong number
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,t,i,s=0,r;
+//    cout<<"enter three digit number: ";
+//    cin>>n;
+//    t=n;
+//    while(n>0){
+//        r=n%10;
+//        s=s+(r*r*r);
+//        n=n/10;
+//    }
+//    if(s==t) {
+//        cout<<"armstrong number";
+//    }
+//    else
+//     cout<<"it is not  an armstrong number";
+//    return 0;
+//}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//armstrong upto 100-999 numbers
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int i,n,s=0,r;
+//    for(int i=100;i<=999;i++){
+//        n=i;
+//        while(n>0){
+//            r=n%10;
+//            s=s+(r*r*r);
+//            n=n/10;
+//        }
+//        if(s==i){
+//            cout<<i<<endl;
+//        }
+//        s=0; //for next number zero
+//    }
+//        return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//factoros of numbers
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,i;
+//    cin>>n;
+//    for(int i=1;i<=n;i++){
+//        if(n%i==0)
+//        cout<<" "<<i;
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//check prime numbers => divide by 1 0r that number...(from factors of number)
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,i,c=0;
+//    cin>>n;
+//    for(int i=1;i<=n;i++){
+//        if(n%i==0)
+//        c++;
+//    }
+//    if(c==2)
+//    cout<<"prime number";
+//    else
+//    cout<<"non prime numnber";
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//prime numbers upto.........1  to 100
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,i,c=0;
+//    for(int n=1;n<=100;n++)
+//    {
+//    for(int i=1;i<=n;i++){
+//        if(n%i==0)
+//        c++;
+//    }
+//    if(c==2){
+//        cout<<n<<endl;
+//    }
+//    c=0;//change ot zero for next number
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//array 
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n;
+//    cin>>n;
+//    int a[n];
+//    for(int i=0;i<n;i++){
+//        cin>>a[i];
+//        }
+//    for(int i=0;i<n;i++){
+//        cout<<a[i]<<endl;
+//        }
+//        return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//print without duplicates....
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n;
+//    cin>>n;
+//    int a[n];
+//    for(int i=0;i<n;i++)
+//        cin>>a[i];
+//                
+//    for(int i=0;i<n;i++){
+//        int    c=1;          //count back to zer
+//        for(int j=i+1;j<=n;j++){
+//            if(a[i]==a[j]){
+//                c++;
+//            }
+//        }
+//        if(c==1)
+//        cout<<a[i]<<endl;
+//    }
+//        return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//oneloop  without dublicates
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,i;
+//    cin>>n;
+//    int a[n];
+//    for(int i=0;i<n;i++)
+//    cin>>a[i];
+//    
+//    int c[100]={0};                         //give max numbers
+//    for(int i=0;i<n;i++){
+//        if(c[a[i]]==0){
+//        cout<<a[i]<<" ";
+//    }
+//    c[a[i]]++;
+//}
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//lcm
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n1,n2,lcm;
+//    cout<<"enter umbers : ";
+//    cin>>n1>>n2;
+//    lcm = (n1>n2) ? n1 : n2;
+//    while(1){
+//            if(lcm%n1==0 && lcm%n2==0)
+//            {
+//                cout<<"lcm of the numberes is"<<n1<<" and "<<n2<<" is "<<lcm;
+//                break;
+//            }
+//            lcm++;
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//lcm using gcd
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n1,n2,lcm,gcd;
+//    cout<<"enter : ";
+//    cin>>n1>>n2;
+//    
+//    for(int i=1;i<=n1 && i<=n2;i++){
+//        if(n1%i==0 && n2%i==0)
+//        gcd=i;
+//    }
+//    lcm = (n1*n2)/gcd;
+//    cout<<lcm;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//addition of array
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,sum=0;
+//    cin>>n;
+//    int arr[n];
+//    for(int i=0;i<n;i++){
+//        cin>>arr[i];
+//        sum+=arr[i];
+//    }
+//    cout<<"sum is "<<sum;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//maximum number
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int n,max;
+//    cin>>n;
+//    int arr[n];
+//    for(int i=0;i<n;i++)
+//        cin>>arr[i];
+//    
+//    max=arr[0];
+//    for(int i=0;i<n;i++){
+//        if(arr[i]>max)
+//        max=arr[i];
+//    }
+//    cout<<max;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//functions
+//#include<iostream>
+//using namespace std;
+//int display(){
+//    int a,b,c;
+//    cin>>a>>b;
+//    cout<<"sum is "<<a+b;
+//}
+//int main(){
+//    display();
+//    display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//function overloading (with same name of function and different parameters)not check data types
+//#include<iostream>
+//using namespace std;
+//
+//int sum(int a,int b){
+//    return a+b;
+//}
+//
+//int sum(int a,int b,int c){
+//    return a+b+c;
+//}
+//
+//float sum(float a,float b){
+//    return a+b;
+//}
+//int main(){
+//    cout<<sum(10,20)<<endl;
+//    cout<<sum(10,20,30);
+//    cout<<sum(10.3f,4.5f);            //must give f to find float......
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//default argument functions
+//#include<iostream>
+//using namespace std;
+//    void detail(string name,int age,string city="tenkasi"){   //default
+//        cout<<name<<" is from "<<city<<" and age is "<<age<<endl;
+//    }
+//    int main(){
+//        detail("vicky",21);
+//        detail("nakky",21,"coutrallam");
+//    return 0;
+//} 
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//swapping
+//#include<iostream>       
+//using namespace std;
+//void swap(int &a,int &b){       //call reference
+//    int t=a;
+//    a=b;
+//    b=t;
+//}
+//int main(){
+//        int a=5,b=7;              //use char also..
+//        cout<<"before swapping : "<<a<<" "<<b<<endl;
+//        swap(a,b);
+//        cout<<"after swapping : "<<a<<" "<<b;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//Templates in c++..........create a function and it used for diff datatypes 
+//#include<iostream>
+//using namespace std;
+//template <class T>                //template
+//void swapping(T &a,T &b){      //{ 
+//    T t=a;
+//    a=b;
+//    b=t;                       //}
+//}
+//int main(){
+//        int x=5,y=7;  
+//        char a='A',b='B';           
+//        cout<<"before swapping : "<<a<<" "<<b<<endl;
+//        swapping(a,b);
+//        cout<<"after swapping : "<<a<<" "<<b<<endl;
+//        
+//        cout<<"before swapping : "<<x<<" "<<y<<endl;
+//        swapping(x,y);
+//        cout<<"after swapping : "<<x<<" "<<y;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//ENUM in c++
+//#include<iostream>
+//using namespace std;
+//enum gender {male,female};
+//int main(){
+//    gender g=male;
+//    switch(g){
+//        case male:
+//            cout<<"you are male"<<endl;
+//            break;
+//        case female:
+//            cout<<"you are female"<<endl;
+//            break;
+//            default:
+//            cout<<"error";    
+//    }
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//class in c++ (basic)
+//area of circle,circumference of a circle.
+//#include<iostream>
+//using namespace std;
+//class circle{
+//    private: float radius;          //user for all functions
+//    public: float area(){
+//        cout<<"enter radius : ";
+//        cin>>radius;
+//        return ((3.14)*radius*radius);  //pi r^2
+//    }
+//    float circumstances(){
+//        return (2*3.14*radius);
+//    }
+//};
+//int main(){
+//    circle c;
+//    cout<< "area of circle : "<<c.area()<<endl;
+//    cout<<"circumstances : "<<c.circumstances();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//Access specifier      ---->>>  public,private,protected(inheritance).....
+
+//public access specifier...(used by main functions / outside)
+//#include<iostream>
+//using namespace std;
+//class student{
+//    public: 
+//    string name;
+//    int age;
+//    void display(){
+//        cout<<"name : "<<name<<endl;
+//        cout<<"age : "<<age;
+//    }
+//};
+//int main(){
+//    student s;
+//    cout<<"enter name : ";
+//    cin>>s.name;
+//    cout<<"enter age : ";
+//    cin>>s.age;
+//    s.display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//private access specifier...(used within the class only)
+//#include<iostream>
+//using namespace std;
+//class student{
+//    private:                                 //private not access by main
+//    string name;
+//    int age;
+//    
+//    public: 
+//    void getdata(){                         //under public used
+//    cout<<"enter name : ";
+//    cin>>name;
+//    cout<<"enter age : ";
+//    cin>>age;
+//    }
+//    void display(){
+//        cout<<"name : "<<name<<endl;
+//        cout<<"age : "<<age;
+//    }
+//};
+//int main(){
+//    student s;
+//    s.getdata();
+//    s.display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+// :: scope resolution in c++
+//get student name,3 marks,average...
+
+//#include<iostream>
+//using namespace std;
+//class student{
+//    private:
+//        string name;
+//        int m1,m2,m3,tot;
+//        float avg;
+//    public:
+//    void getdata(){
+//        cout<<"enter name : ";
+//        cin>>name;
+//        cout<<"enter marks : ";
+//        cin>>m1>>m2>>m3; 
+//    }
+//    void display();                   //function declare in public
+//};
+//void student::display(){
+//    tot = m1+m2+m3;
+//    avg = tot/3.0;
+//    cout<<"name    : "<<name<<endl;
+//    cout<<"m1      : "<<m1<<endl;
+//    cout<<"m2      : "<<m2<<endl;
+//    cout<<"m3      : "<<m3<<endl;
+//    cout<<"total   : "<<tot<<endl;
+//    cout<<"average : "<<avg;
+//    }
+//int main(){
+//    student s;
+//    s.getdata();
+//    s.display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//CONSTRUCTOR in c++ is a special 'MEMBER FUNCTION' having the same name as that of its class which is used to initialize(assign)
+//"some valid values to the data members" of an object.It is executed automically whenever an object of a class is created...
+
+//Default constructor                //{
+//parameterized constructed              //constructed overload
+//copy constructor                   //}
+
+//default constructor.....
+//#include<iostream>
+//using namespace std;
+//class math{
+//    private:
+//        int a,b,c;
+//        public:
+//        math(){                           //constructor name must be  class name...
+//            a=5;                          //a and b are data members..........
+//            b=5;
+//        }
+//        void add(){
+//        c=a+b;
+//        cout<<"total : "<<c;
+//        }
+//};
+//int main(){
+//    math m;
+//    m.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//parameterized constructed 
+//#include<iostream>
+//using namespace std;
+//class math{
+//    private:
+//        int a,b,c;
+//        public:
+//        math(int x,int y){                           
+//            a=x;
+//            b=y;
+//        }
+//        void add(){
+//        c=a+b;
+//        cout<<"total : "<<c;
+//        }
+//};
+//int main(){
+//    math m(10,5);     //parameterized constructed 
+//    m.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//copy constructor 
+//#include<iostream>
+//using namespace std;
+//class math{
+//    private:
+//        int a,b,c;
+//        public:
+//        math(int x,int y){                           
+//            a=x;
+//            b=y;
+//        }
+//        math(math &x){         //copy
+//            a=x.a;
+//            b=x.b;
+//        }
+//        void add(){
+//        c=a+b;
+//        cout<<"total : "<<c<<endl;
+//        }
+//};
+//int main(){
+//    math m(10,5); 
+//    math m1(m);                 //copy constructed 
+//    m.add();
+//    m1.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//constructor overloading
+//#include<iostream>
+//using namespace std;
+//class math{
+//    private:
+//        int a,b,c;
+//        public:
+//            math(){              //default constructor
+//                a=0;
+//                b=0;
+//            }
+//        math(int x,int y){        //parameterized constructed                    
+//            a=x;
+//            b=y;
+//        }
+//        math(math &x){         //copy constructor
+//            a=x.a;
+//            b=x.b;
+//        }
+//        void add(){
+//        c=a+b;
+//        cout<<"total : "<<c<<endl;
+//        }
+//};
+//int main(){
+//    math m1;
+//    math m2(10,5); 
+//    math m3(m2);                 
+//    m1.add();
+//    m2.add();
+//    m3.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//DESTRUCTOR in c++(~)
+//is an instance member function which is  invoked autmatically whenever object going to be destroyed
+//means,a destructor is last function that is going to be called before an object is destroyed
+//#include<iostream>
+//using namespace std;
+//class math{
+//    private:
+//        int a,b,c;
+//    public:
+//    math(){
+//        a=5;
+//        b=10;
+//    }    
+//    ~math(){
+//        cout<<"memory destructor";         //c compiler already done this destructor
+//    }
+//    void add(){
+//        c=a+b;
+//        cout<<c<<endl;
+//    }
+//};
+//int main(){
+//    math m;
+//    m.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//INHERITANCE 
+//is the process by which objects of one class acquired the property of another class
+//single inheritance
+//multiple inheritance
+//multilevel inheritance
+//hierarchical inheritance
+//hybrid inheritance
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//single inheritance
+//#include <iostream>
+//using namespace std;
+//class father                              //superclass
+//    {
+//    public:
+//        void house(){
+//        cout<<"have house"<<endl;
+//        }
+//};
+//class son:public father                 //permission for accesssing father class by son class...subclass
+//    {
+//    public:
+//        void car(){
+//        cout<<"have car"<<endl;
+//        }
+//};
+//int main(){
+//    son s;
+//    s.house();
+//    s.car();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//multiple inheritance                 a<--b (depends)
+//#include<iostream>
+//using namespace std;
+//class father{
+//    public:
+//        void work(){
+//        cout<<"good worker"<<endl;    
+//        }
+//};
+
+//class mother{
+//    public:
+//            void cook(){
+//                cout<<"good cook"<<endl;            }
+//};
+//class son:public father,public mother             //access more classes
+//{
+//    public:
+//        void good(){
+//            cout<<"Be good"<<endl;
+//        }    
+//};
+//int main(){
+//    son s;
+//    s.work();
+//    s.cook();
+//    s.good();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//multilevel inheritance                   a<---b<---c (depends)
+//#include<iostream>
+//using namespace std;
+//class grandfather{
+//    public:
+//        void land(){
+//            cout<<"have land"<<endl;
+//        }
+//};
+//class father:public grandfather
+//{
+//    public:
+//        void house(){
+//            cout<<"have house"<<endl;
+//        }
+//};
+//class son:public father
+//{
+//    public:
+//        void car(){
+//            cout<<"have car"<<endl;
+//        }
+//};
+//int main(){
+//    son s;
+//    s.land();
+//    s.house();
+//    s.car();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//hybrid inheritance - combination of more than one type of inheritance (single+multiple)
+//#include<iostream>
+//using namespace std;
+//class grandfather{
+//    public:
+//        void land(){
+//            cout<<"have land"<<endl;
+//        }
+//};
+//class father:public grandfather
+//{
+//    public:
+//        void house(){
+//            cout<<"have house"<<endl;
+//        }
+//};
+//class mother{
+//    public:
+//        void cook(){
+//            cout<<"good cook"<<endl;
+//        }
+//};
+//class son:public father,public mother
+//{
+//    public:
+//        void car(){
+//            cout<<"have car"<<endl;
+//        }
+//};
+//int main(){
+//    son s;
+//    s.land();
+//    s.house();
+//    s.cook();
+//    s.car();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//hierarchical inheritance - more than one class inherits from a single base class                    a
+                                                                                  //              b          c   
+                                                                                 //           d     e     f     g
+//#include<iostream>
+//using namespace std;
+//class shape{
+//    public:
+//    float length,breadth,radius;
+//};
+//class rectangle:public shape
+//{
+//    public:
+//        void getrectangle(){
+//            cout<<"enter length : "<<endl;
+//            cin>>length;
+//            cout<<"enter breadth : "<<endl;
+//            cin>>breadth;
+//        }
+//        float rectanglearea(){
+//            return length*breadth;
+//        }
+//};
+//class circle:public shape
+//{
+//    public:
+//        void getcircle(){
+//            cout<<"enter radius : "<<endl;
+//            cin>>radius;
+//        }
+//        float circlearea(){
+//            return 3.14*(radius*radius);
+//        }
+//};
+//class square:public shape
+//{
+//    public:
+//        void getsquare(){
+//            cout<<"enter length : "<<endl;
+//            cin>>length;
+//        }
+//        float squarearea(){
+//            return length*length;
+//        }
+//};
+//int main(){
+//    rectangle r;
+//    circle c;
+//    square s;
+//    r.getrectangle();
+//    cout<<"rectangle "<<r.rectanglearea()<<endl;
+//    c.getcircle();
+//    cout<<"circle "<<c.circlearea()<<endl;
+//    s.getsquare();
+//    cout<<"square "<<s.squarearea()<<endl;
+//    return 0;
+//}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//DIAMOND prblem in c++                                                            a
+//                                                                            b         c   which a errror(ambiguous error)
+//                                                                                 d 
+
+//#include<iostream>
+//using namespace std;
+//class A{
+//    public:
+//        void display(){
+//            cout<<"display A"<<endl;
+//        }
+//};
+//class B: virtual public A{                //by virtual method we clear ambiguous error
+//    
+//};
+//class C:virtual public A{
+//    
+//};
+//class D:public B,public C{
+//    
+//};
+//int main(){
+//    D d;
+//    d.display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//diamond problem by constructor method
+//#include<iostream>
+//using namespace std;
+//class A{
+//    public:
+//        A(){
+//            cout<<"constructing A"<<endl;    
+//        }
+//};
+//class B:virtual public A{                              //without with yu use
+//    public:
+//        B(){
+//            cout<<"constructing B"<<endl;    
+//        }
+//};
+//class C:virtual public A{
+//    public:
+//        C(){
+//            cout<<"constructing C"<<endl;    
+//        }
+//};
+//class D:public B,public C{
+//    public:
+//        D(){
+//            cout<<"constructing D"<<endl;    
+//        }
+//};
+//int main(){
+//    D d;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+//BANK MANAGEMENT system using class & inheritance in c++
+//1.savings bank   2.current bank
+//account creation
+//deposit 
+//withdraw
+//balance
+
+//#include<iostream>
+//using namespace std;
+//class account{
+//    private:
+//        string name;
+//        int accno;
+//        string acctype;
+//        public:
+//            void getaccdetails(){
+//                cout<<"enter name : ";
+//                cin>>name;
+//                cout<<"enter acc no : ";
+//                cin>>accno;
+//                cout<<"ente acctype : ";
+//                cin>>acctype;
+//            }
+//            void displayaccdetails(){
+//                cout<<" name : "<<name<<endl;
+//                cout<<" acc no : "<<accno<<endl;
+//                cout<<" acctype : "<<acctype<<endl;
+//            }
+//}; 
+//
+//class currentaccount:public account
+//{
+//    private:
+//        float balance;
+//    public:
+//        void cdisplay(){
+//            cout<<"balance : "<<balance<<endl;
+//        }
+//        void cdeposit(){
+//            float deposit;
+//            cout<<"enter amount to deposit : ";
+//            cin>>deposit;
+//            balance = balance + deposit;
+//        }
+//        void cwithdraw(){
+//            float withdraw;
+//            cout<<"balance : "<<balance<<endl;
+//            cout<<"enter amount to  be withdraw : ";
+//            cin>>withdraw;
+//            if(balance > 1000){
+//                balance = balance - withdraw;
+//                cout<<"balance amount after withdraw : "<<balance<<endl;
+//            }
+//            else{
+//                cout<<"insufficient amount";
+//            }
+//        } 
+//};
+//
+//class savingsaccount:public account{
+//    private:
+//        float sbalance;
+//        public:
+//        void sdisplay(){
+//            cout<<"balance : "<<sbalance<<endl;
+//        }
+//        void sdeposit(){
+//            float deposit,interest;
+//            cout<<"enter amount to deposit : ";
+//            cin>>deposit;
+//            sbalance = sbalance + deposit;
+//            interest = (sbalance*2)/100;
+//            sbalance = sbalance + interest;
+//        }
+//        void swithdraw(){
+//            float withdraw;
+//            cout<<"balance : "<<sbalance<<endl;
+//            cout<<"enter withdraw : ";
+//            cin>>withdraw;
+//            if(sbalance > 500){
+//                sbalance = sbalance - withdraw;
+//                cout<<"amount after withdraw : "<<sbalance<<endl;
+//            }
+//            else{
+//                cout<<"insuficient balnce";
+//            }
+//        }
+//};
+//
+//int main()
+//{
+//    currentaccount c;
+//    savingsaccount s;
+//    char type;
+//    cout<<"enter S for savings and C for current accounts : ";
+//    cin>>type;
+//    int choice;
+//    if(type=='S' || type=='s'){
+//        s.getaccdetails();
+//        while(1){
+//            cout<<"choose  choice : "<<endl;
+//            cout<<"1. deposit : "<<endl;
+//            cout<<"2. withdraw : "<<endl;
+//            cout<<"3. display balance : "<<endl;
+//            cout<<"4. dispaly with full details : "<<endl;
+//            cout<<"5. exit : "<<endl;
+//            cout<<"---------------------------------------"<<endl;
+//            cout<<"enter your choice"<<endl;
+//            cin>>choice;
+//            switch(choice){
+//                case 1:
+//                    s.sdeposit();
+//                    break;
+//                case 2:
+//                    s.swithdraw();
+//                    break;
+//                case 3:
+//                    s.sdisplay();
+//                    break;
+//                case 4:
+//                    s.displayaccdetails();
+//                    s.sdisplay();
+//                case 5:
+//                    goto end;
+//                    break;
+//                default:
+//                    cout<<"choice is invalid";
+//            }
+//        }
+//    }
+//    else if(type=='C' || type=='c'){
+//            c.getaccdetails();
+//            while(1){
+//            cout<<"choose  choice : "<<endl;
+//            cout<<"1. deposit : "<<endl;
+//            cout<<"2. withdraw : "<<endl;
+//            cout<<"3. display balance : "<<endl;
+//            cout<<"4. dispaly with full details : "<<endl;
+//            cout<<"5. exit : "<<endl;
+//            cout<<"------------------------------"<<endl;
+//            cout<<"enter your choice"<<endl;
+//            cin>>choice;
+//            switch(choice){
+//                case 1:
+//                    c.cdeposit();
+//                    break;
+//                case 2:
+//                    c.cwithdraw();
+//                    break;
+//                case 3:
+//                    c.cdisplay();
+//                    break;
+//                case 4:
+//                    c.displayaccdetails();
+//                    c.cdisplay();
+//                case 5:
+//                    goto end;
+//                    break;
+//                default:
+//                    cout<<"choice is invalid";
+//            }    
+//            }
+//    }
+//    else{
+//        cout<<"invalid account";
+//    }
+//    end:
+//    {
+//    cout<<"thanks for banking";
+//    }
+//    return 0;
+//} 
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//protected access specifier in c++
+
+//#include<iostream>
+//using namespace std;
+//class A{
+//    protected:                         //also access by inherited class 
+//        int x;
+//};
+//class B:public A{
+//    public:
+//        void getdetails(){
+//            cout<<"enter : ";
+//            cin>>x;
+//        }
+//        void display(){
+//            cout<<"x is : "<<x;
+//        }
+//};
+//int main(){
+//    B b;
+//    b.getdetails();
+//    b.display();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//OVER RIDING 
+
+//#include<iostream>
+//using namespace std;
+//class base{
+//    protected:
+//        int a,b;
+//    public:
+//        void add(){
+//            cout<<"enter 2 no : "<<endl;
+//            cin>>a>>b;
+//            cout<<a+b;
+//        }
+//};
+//class derived:public base
+//{
+//    private:
+//        int c;
+//    public:
+//        void add(){                             //redefined the same function is called overriding.....
+//            cout<<"enter 3 no : ";
+//            cin>>a>>b>>c;
+//            cout<<a+b+c;
+//        }
+//};
+//int main(){
+//    base b;
+//    b.add();
+//    derived d;
+//    d.add();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//POLYMORPHISM                                                                                             polymorphism
+//is the combination of "poly" and "morphs" which means many forms...........                    1.compile time      2.run time
+//                                                                                        a.)function overloading    a.)virtual function
+//operating overloading                                                                   b.)operating overloading
+
+////addition of complex numbers
+//#include<iostream>
+//using namespace std;
+//class complex{
+//    private:
+//        int real,img;
+//    public:
+//        complex(){          //not given any values ,default 0 
+//            real=0;
+//            img=0;
+//        }
+//        complex(int r,int i){         //parameterized constructed
+//            real=r;
+//            img=i;
+//        }
+//        void print(){
+//            cout<<real<<" + "<<img<<"i"<<endl;
+//        }
+//        complex operator + (complex c2){            //operator overload ....complex c is 2nd number
+//            complex temp;
+//            temp.real=real+c2.real;//2+3
+//            temp.img=img+c2.img;//5+2
+//            return temp;
+//        }
+//};
+//int main(){
+//    complex c1(2,5);//1st
+//    complex c2(3,2);//2nd
+//    complex c3;//add
+//    c3=c1+c2;
+//    c3.print();
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+//UNARY operator overloading        ++,--
+//#include<iostream>
+//using namespace std;
+//class unary{
+//    private:
+//        int x;
+//        public:
+//            box(){
+//                x=0;
+//            }
+//            box(int a){
+//                x=a;
+//            }
+//            void print(){
+//                cout<<"x is : "<<x<<endl;
+//            }
+//            void operator ++()  //pre
+//            {
+//                ++x;    
+//            }
+//            void operator --(int)//post
+//            {
+//                x--;
+//            }
+//};
+//int main(){
+//    unary u;
+//    u.print();
+//    ++u;
+//    u.print();
+//    u--;
+//    u.print();
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+//Base class pointer derived class object
+//#include<iostream>
+//using namespace std;
+//class car     //base
+//{
+//    public:
+//        void start(){
+//            cout<<"car start";
+//        }
+//};
+//class BMW:public car//derived
+//{
+//    public:
+//        void gear(){
+//            cout<<"advanced gear";
+//        }
+//};
+//int main(){
+//    BMW b;
+//    car *p=NULL;   
+//    p=&b;
+//    p->start();
+//    return 0;
+//}
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+//Base class pointer derived class object
+//virtual function is defined as declared in base class and latest  redeclared in deriverd class....is called virtual function
+//#include<iostream>
+//using namespace std;
+//class A{
+//    public:
+//        virtual void fun(){                      //virtual 
+//            cout<<"func of A class"<<endl;
+//        }
+//};
+//class B:public A
+//{
+//    public:
+//        void fun(){
+//            cout<<"func of B class"<<endl;     //fuction name same but defi difff is called function overriding.... 
+//        }
+//};
+//int main(){
+////    B b;
+////    b.fun();
+//    B b;
+//    A *p=&b;
+//    p->fun();
+//    return 0;
+//}
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+//virtual function
+
+//#include<iostream>
+//using namespace std;
+//class vaccine{
+//    public:
+//    virtual void putvaccine(){                             //create virtual .........then crt
+//        cout<<"covid vaccine"<<endl;
+//    }
+//};
+//class covaxin:public vaccine
+//{
+//    public:
+//    void putvaccine(){
+//        cout<<"put covaxin vaccine"<<endl;
+//    }
+//};
+//class covishield:public vaccine
+//{
+//    public:
+//    void putvaccine(){
+//        cout<<"put covishield vaccine"<<endl;
+//    }
+//};
+//int main(){
+////    vaccine v;
+////    v.putvaccine();
+//    covaxin cv;
+//    covishield cs;
+//    
+//    vaccine *v=NULL;
+//    v=&cv;
+//    v->putvaccine();
+//    v=&cs;
+//    v->putvaccine();
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+//same base class pointer derive class object
+//pure virtualn function is called virtual func assign to 0  ,one pure virtual func is used...in pgm is called obstruct class
+//must have redefined function
+
+//#include<iostream>
+//using namespace std;
+//class bike{
+//    public:
+////        virtual void start(){             //virtual is redefined same function..
+////            cout<<"bike start"<<endl;
+////        }
+//    virtual void start()=0;              //pure virtual function
+//};
+//class pulsar:public bike{
+//    public:
+//        void start(){
+//            cout<<" pulsar bike start"<<endl;
+//        }
+//};
+//int main(){
+//    bike *p=new pulsar();
+//    p->start();
+//    return 0;
+//}
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+//OBSTRUCTION is defined as hide unnecessary things
+//when u see iob not see to sbi,viceversa
+
+//#include<iostream>
+//using namespace std;
+//class bank{
+//    public :
+//        virtual void debit_credit()=0;          //pure virtual ......then all class uses this function
+//        virtual void loan()=0;
+//};
+//class sbi:public bank
+//{
+//    public:
+//        void debit_credit(){
+//            cout<<"sbi bank debit and credit"<<endl;
+//        }
+//        void loan(){
+//            cout<<"8% in sbi"<<endl;
+//        }
+//};
+//class iob:public bank
+//{
+//    public:
+//        void debit_credit(){
+//            cout<<"iob bank debit and credit"<<endl;
+//        }
+//        void loan(){
+//            cout<<"12% in iob"<<endl;
+//        }
+//};
+//int main(){
+//    bank *b=new sbi();
+//    b->debit_credit();
+//    b->loan();
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+//getus and setus
+
+//#include<iostream>
+//using namespace std;
+//class student{
+//    private:
+//        string name;
+//        int age;
+//    public:
+//        student(string n,int a){           //constructed
+//            name=n;
+//            age=a;
+//        }
+//        string getName(){
+//            return this->name;
+//        }
+//        void setName(string n){
+//            this->name=n;
+//        }
+//        void print(){
+//            cout<<"name : "<<name<<endl;
+//            cout<<"age  : "<<age<<endl;
+//        }
+//};
+//int main(){
+//    student s("vicky",21);
+//    s.print();
+//    s.setName("nakki");
+//    s.print();
+//    cout<<s.getName()<<endl;
+//    return 0;
+//}
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//static variables and static functions
+//total numbers
+// #include<iostream>
+// using namespace std;
+// class student{
+//     private:
+//         static int x;              //must create static
+//         string name;
+//         int age;
+//     public :
+//         student(string n,int a){
+//             x++;                     //increment
+//             name=n;
+//             age=a;
+//         }
+//         void print(){
+//             cout<<"name : "<<name<<endl;
+//             cout<<"age : "<<age<<endl;
+//         }
+//         static int count(){
+//             return x;
+//         }
+// };
+// int student::x=0;              //static variables
+// int main(){
+//     student s1("vicky",21);
+//     student s2("nacky",21);
+//     student s3("dicky",21);
+//     s1.print();
+//     s2.print();
+//     s3.print();
+//     cout<<"total : "<<student::count()<<endl;
+//     return 0;
+// }
+
+//------------------------------------------------------------------------------------------------------------
+//friend function
+
+//#include<iostream>
+//using namespace std;
+//class A{
+//    private:
+//        int x,y;
+//        public:
+//        friend void setdata();       //friends for class A and function 
+//        
+//};
+//
+//void setdata(){
+//                A a;                 //create object inside this
+//                a.x=10;
+//                a.y=20;
+//                cout<<"x+y : "<<a.x+a.y<<endl;
+//            }
+//
+//int main(){
+//    setdata();                      //straight 
+//    return 0;
+//}
+
+//-------------------------------------------------------------------------------------------------------------------
+//friend class
+
+//#include<iostream>
+//using namespace std;
+//class B;                           //assign class as before ....
+//class A{
+//    private :
+//        int x=10;
+//        friend B;                 //friend class...........
+//};
+//class B
+//{
+//    public :
+//        A a;
+//        void display(){
+//            cout<<"x : "<<a.x;
+//        }
+//};
+//int main(){
+//    B b;
+//    b.display();
+//    return 0;
+//}
+
+//------------------------------------------------------------------------------------------------------------------
+//using friend modify the private 
+
+//#include<iostream>
+//using namespace std;
+//class A{
+//    private:
+//        int x;
+//    public :
+//        A(){
+//            x=0;                  //default constructor 
+//        }
+//    void print(){
+//        cout<<"x : "<<x<<endl;
+//    }
+//    friend void setvalue(A &a,int n);             //pass reference object and changing value...must give return datatype
+//};
+//void setvalue(A &a,int n){
+//    a.x=n;
+//}
+//int main(){
+//    A a;
+//    a.print();
+//    setvalue(a,3);
+//    a.print();
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------
+//MEMBER INITIALIZER LIST
+//single value
+
+//#include<iostream>
+//using namespace std;
+//class base{
+//    private:
+//        int x;
+//    public:
+//        base(int a):x(a){}                 //initializer
+//        void print(){
+//            cout<<"x : "<<x<<endl;
+//        }
+//};
+//int main(){
+//    base b(3);
+//    b.print();
+//    return 0;
+//}
+
+//---------------------------------------------------------------------------------------------------------------------
+//multiple values
+//#include<iostream>
+//using namespace std;
+//class base{
+//    private:
+//        int x,y;
+//    public:
+//        base(int a,int b):x(a),y(b){}                 //initializer
+//        void print(){
+//            cout<<"x : "<<x<<endl;
+//            cout<<"y : "<<y<<endl;
+//        }
+//};
+//int main(){
+//    base b(3,5);
+//    b.print();
+//    return 0;
+//}
+
+//-------------------------------------------------------------------------------------------------------------------
+//Add value to base class constructor
+
+//#include<iostream>
+//using namespace std;
+//class base{
+//    private:
+//        int x;
+//    public:
+//        base(int a):x(a){
+//        cout<<"base : "<<x<<endl;                 //for check
+//        }
+//};
+//class child:public base
+//{
+//    private:
+//        int y;
+//    public:
+//        child(int a,int b):base(a),y(b){
+//        cout<<"child y : "<<y<<endl;                 //for check
+//        }
+//};
+//int main(){
+//    child c(5,10);
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------
+//Using member initializer list initialized const variable
+
+//#include<iostream>
+//using namespace std;
+//class base{
+//    private:
+//        const int x;
+//    public:
+//        base(int a):x(a){
+////            x=a;               normal constructor error by const value.so use initializer
+//            cout<<x;
+//        }
+//};
+//int main(){
+//    base b(3);
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------
+//constructor's parameter name is same as data member
+
+//#include<iostream>
+//using namespace std;
+//
+//class student{
+//    private:
+//        string name;
+//        int age;
+//    public:
+////        student(string name,int age){
+////            name=name;                           //   errror
+////            age=age;
+////        }
+//
+////      student(string name,int age){              
+////        this->name=name;                           //correct
+////        this->age=age;
+////        }
+//
+//        student(string name,int age):name(name),age(age){}    //initializer
+//        void print(){
+//            cout<<name<<endl;
+//            cout<<age<<endl;
+//        }
+//};
+//int main(){
+//    student s("vicky",21);
+//    s.print();
+//    return 0;
+//}
+
+//-------------------------------------------------------------------------------------------------------------
+//NARROW CONVERSION PROBLEM in member initializer
+
+//#include<iostream>
+//using namespace std;
+//class base{
+//    private:
+//        char x;
+//    public :
+//        base(int a):x{a}{               //char ,int data type forcing so got narrow problem,so use {}to warning
+//            cout<<x;
+//        }
+//};
+//int main(){
+//    base b(65);
+//    return 0;
+//}
+
+//----------------------------------------------------------------------------------------------------------------
+//INLINE function
+
+//#include<iostream>
+//using namespace std;
+//inline int cube(int x){         //use for simple functions
+//    return x*x*x;
+//}
+//int main(){
+//    int x=2;
+//    cout<<cube(x);           //replcethe function speed increase
+//    return 0;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//LAMBDA EXPRESSION/FUNCTIONS
+
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    auto sum = [](int a,int b){            //not working in thiscopmpiler
+//        return a+b;
+//    };
+//    cout<<"total is : "<< sum(3,5)<<endl;
+//    return 0;
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+//PREPROCESSOR DIRECTIVE IN C++
+//#include<iostream>                 //preprocessor directive
+//#define PI 3.14  
+//#define rectangle(length,breadth) (length*breadth)     
+//#define createString(s) #s          //s is passed string ,#s is the string
+//#define concat(a,b) a## b           //concatination
+//using namespace std;
+//
+//int main(){
+//    cout<<"circle : "<<PI*5*5<<endl;
+//    int length=5,breadth=4;
+//    cout<<"rectangle : "<<rectangle(length,breadth)<<endl;
+//    cout<<"new string : "<<createString(vicky)<<endl;
+//    int ab=100;
+//    cout<<"value of AB: "<<concat(a,b)<<endl;
+//    
+////    cout<<"line : "<<__LINE__<<endl;            //find nice
+////    cout<<"file : "<<__FILE__<<endl;
+////    cout<<"date : "<<__DATE__<<endl;
+////    cout<<"time : "<<__TIME__<<endl;
+////    cout<<"cplusplus : "<<__cplusplus<<endl;
+//    return 0;
+//}
+
+//------------------------------------------------------------------------------------------------------------------------------------
+//CHARACTER CLASSIFICATION FUNCTION 
+//isalnum,isalpha,isdigit,islower,isupper,isspace....
+#include<iostream>
+#include<cctype>             //character
+//using namespace std;
+//int main(){
+//    int co=0;
+//    char c[6]="R@ 1a";
+//    for(int i=0;i<6;i++){
+//        if(isalpha(c[i]))
+//        cout<<c[i]<<endl;
+//    }
+//    return 0;
+//}
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//RANDOM NUMBERS
+//#include<iostream>
+//using namespace std;
+//void randomnum(){
+//    int random;
+//    for(int i=0;i<10;i++){
+//        random = rand()%10;            //not work
+//        cout<<random<<endl;
+//    }
+//}
+//int main(){
+//    randomnum();
+//    return 0;
+//}
+
+//------------------------------------------------------------------------------------------------------------------------------
+//EXPECTION HANDLING IN C++
+//any wrong value return is corrected by
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int a=10,b=0,c;
+//    try{                              //try
+//        if(b==0)
+//        throw 25;
+//        c=a/b;
+//    cout<<c<<endl;
+//    }
+//    catch(int e){                                           
+//        cout<<"err no : "<<e<<"cant divide by zero"<<endl;
+//    }
+//catch(...){
+//cout<<"err";                     //multiplr error datatype
+//}
+//    return 0;
+//}
+
+//-------------------------------------------------------------------------------------------------------------------------------
+//USING fstream....create and storing  a file in c++(file stream)
+ ///write a file..............
+ 
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//    ofstream o("test.txt",ios::trunc);                //app - append,trunc
+//    o<<"vicky c++"<<endl;                            //not working
+//    o<<"tenkasi"<<endl;
+//    o.close();
+//    return 0; 
+//}
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//read a file in c++
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//    string myText;
+//    ifstream myreadfile("test.txt");
+//    while(getline(myreadfile,mytext)){
+//        cout<<mytext;
+//    }
+//    myreadfile.close();
+//    return 0; 
+//}
+
+//---------------------------------------------------------------------------------------------------------------------
+//STL library
+//STL-array in c++
+//not supported in this version
+//#include<iostream>
+//#include<array>                    //STL array
+//using namespace std;
+//int main(){
+//    array<int,5> a={1,2,3,4,5};
+//    cout<<a.size();
+//    return 0;
+//}
+
+
